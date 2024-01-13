@@ -9,7 +9,14 @@ int main(){
     cout<<"Enter the Third  no:";
     cin>>z;
     if(x>y && x>z){
-        cout<<"The first no is greatest";
+        cout<<x<<"The first no is greatest";
     }
-
+    if(y>x && y>z){
+        cout<<y<<"The second no is greatest";
+    }
+    if(z>x && z>y){
+        cout<<z<<"The third no is greatest";
+    }
+    
+    
 }
