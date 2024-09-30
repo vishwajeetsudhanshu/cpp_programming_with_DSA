@@ -1,16 +1,17 @@
 #include<iostream>
 using namespace std;
-int main()
-{
-    int a=1,i,x;
-    cout<<"The A.P of n value is=="<<endl;
-    cin>>x;
-    // for(i=1;i<=2*x-1;i=i+2){
+int main(){
+    int n,i;
+    cout<<"Enter the no. of terms for Ap: ";
+    cin>>n;
+    // for(i=1;i<=2*n-1;i+=2){
     //     cout<<i<<" ";
+    //     ;
     // }
-    for(i=1;i<=x;i++){
+    int a=4;
+    for(i=1;i<=n;i++){
         cout<<a<<" ";
-        a=a+2;
+        a=a+3;
     }
 
 }

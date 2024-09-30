@@ -21,10 +21,16 @@ int main()
 
 // }
 // //i=i+19 also written as i+=19
-int n,i;
-cout<<"enter no.";
-cin>>n;
-for(int i=1;i<=10;i++){
-    cout<<n<<"x"<<i<<"="<<n*i<<"\n";
+// int n,i;
+// cout<<"enter no.";
+// cin>>n;
+// for(int i=1;i<=10;i++){
+//     cout<<n<<"x"<<i<<"="<<n*i<<"\n";
+// }
+int x,i;
+cout<<"Enter the No. : ";
+cin>>x;
+for(i=1;i<=10;i++){
+    cout<<x<<"*"<<i<<"="<<x*i<<endl;
 }
 }
