@@ -1,4 +1,5 @@
 //WAP to check if a number is a prime or not prime no means no factor other than 1 and itself
+//using boolean we can store the state as we use in this
 #include<iostream>
 using namespace std;
 int main(){
