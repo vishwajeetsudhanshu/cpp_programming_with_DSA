@@ -22,6 +22,7 @@ int main(){
         power=1/power;
         b=-b;
     }
-    cout<<a<<" raised to the power "<<b<<" is "<<power;
+    if(a==0 && b==0) cout<<"Not defined";
+    else  cout<<a<<" raised to the power "<<b<<" is "<<power;
 
 }
