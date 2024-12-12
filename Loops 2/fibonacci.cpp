@@ -1,6 +1,15 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int a,b,sum;
-    a=1;b=1;sum=a+b;
+    int n,a,b,sum;
+    cout<<"Enter a number: ";
+    cin>>n;
+    a=1;b=1;sum=0;
+    for(int i=1;i<=n-2;i++){
+        sum=a+b;
+        a=b;
+        b=sum;
+
+    }
+    cout<<b;
 }
