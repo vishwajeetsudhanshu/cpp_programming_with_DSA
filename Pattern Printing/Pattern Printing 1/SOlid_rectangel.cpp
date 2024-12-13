@@ -6,5 +6,11 @@ int main(){
     cin>>r;
     cout<<"Enter the no. of columns : ";
     cin>>c;
-    if
+    for(int i=1;i<=r;i++){
+        for(int i=1;i<=c;i++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    
 }
