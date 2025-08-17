@@ -2,5 +2,6 @@
 using namespace std;
 int main(){
     int x=5;
-    cout<<&x;
+    cout<<&x<<endl;
+    cout<<sizeof(int);
 }
