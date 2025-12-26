@@ -1,3 +1,5 @@
+//accessing the elements of array in another function
+//updation pass by value/refrence ?
 #include<iostream>
 using namespace std;
 void display(int a[],int size){ //a is an arr inta[]=*a

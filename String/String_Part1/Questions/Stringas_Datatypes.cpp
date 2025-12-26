@@ -1,4 +1,3 @@
-
 #include<iostream>
 #include<string>
 using namespace std;
@@ -10,6 +9,4 @@ int main(){
     // cin>>s;//only if the given string has no space while taking input
     getline(cin,s);//for taking input with space
     cout<<s;
-    
-
 }
