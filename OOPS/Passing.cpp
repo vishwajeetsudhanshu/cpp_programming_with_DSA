@@ -44,8 +44,20 @@ Player getMaxScorrePlayer(Player a,Player b){
         return b;
 }
 int main(){
-    Player harsh;
-    Player raghav;
+    Player harsh;//object creation, statically
+    Player raghav;//compile time,static allocation
+
+    Player *urvi= new Player;// run time,dynamic allocation
+    Player urviobj=*urvi;
+
+    urviobj.setScore(85);
+    urviobj.setAge(18);
+    //(*urvi).setHealth(20);
+    urvi->setHealth(20);
+
+    cout<<urvi->getHealth()<<endl;
+    cout<<urviobj.getScore()<<endl;
+
     harsh.setAge(22);
     harsh.setHealth(100);
     harsh.setIsAlive(true);
@@ -56,6 +68,7 @@ int main(){
     raghav.setIsAlive(true);
     raghav.setScore(100);
     cout<<addScore(harsh,raghav)<<endl;
+
 
     Player sanket= getMaxScorrePlayer(harsh, raghav);
     cout<<sanket.getScore();
