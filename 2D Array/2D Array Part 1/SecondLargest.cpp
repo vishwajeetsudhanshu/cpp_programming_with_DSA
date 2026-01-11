@@ -1,10 +1,8 @@
-
-//to find out the largest element of a given 2d array of integers
 #include<iostream>
 #include<climits>
 using namespace std;
 int main(){
-    int m;
+  int m;
     cout<<"Enter the no. of rows: ";
     cin>>m;
     int n;
@@ -16,6 +14,7 @@ int main(){
             cin>>arr[i][j];
         }
     }
+    cout<<"Largest elements in array is: ";
     //maimum
     int max=INT_MIN;
     for(int i=0;i<m;i++){
@@ -24,7 +23,16 @@ int main(){
         }
     }
     cout<<max;
-    
+    cout<<endl;
+    int smax=INT_MIN;
+    for(int i=0;i<m;i++){
+        for(int j=0;j<n;j++){
+            if(smax<arr[i][j] && arr[i][j]!=max){
+                smax=arr[i][j];
+            }
+        }
+    }
+    cout<<"The Second largest elemnts in array is: "<<smax;
 
-
+  
 }
