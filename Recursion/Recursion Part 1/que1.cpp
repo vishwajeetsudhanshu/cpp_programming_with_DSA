@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+void greeting(int n){
+    if(n==0) return;
+    cout<<"Good Morning!"<<endl;
+    greeting(n-1);
+}
+int main(){
+    int x;
+    cout<<"How many times you want to greet : ";
+    cin>>x;
+    greeting(x);
+}
